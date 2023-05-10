@@ -15,13 +15,28 @@ public class Smartphone extends Prodotto {
 		this.memorySize = memorySize;
 	}
 	
+
+	public int getImeiCode() {
+		return imeiCode;
+	}
+
+	public void setImeiCode(int imeiCode) {
+		this.imeiCode = imeiCode;
+	}
+
+	public int getMemorySize() {
+		return memorySize;
+	}
+
+	public void setMemorySize(int memorySize) {
+		this.memorySize = memorySize;
+	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Smartphone nome: " + getNome() + 
-				"/nmarca: " + getMarca() +
-				"/nprezzo: " + getPriceWithTaxes() +
-				"/ncodice prodotto: " + getPaddedCode();
+		return "(S)" + productInfos() +
+				"\nimei code: " + getImeiCode() +
+				"\nmemory size: " + getMemorySize();
 	}
-
 }

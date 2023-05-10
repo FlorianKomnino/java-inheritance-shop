@@ -61,5 +61,18 @@ public class Prodotto {
 		return strCode;
 	}
 	
+	public String productInfos() {
+		return "nome: " + getNome() + 
+				"\nmarca: " + getMarca() +
+				"\nprezzo: " + getPriceWithTaxes() +
+				"\ncodice prodotto: " + getPaddedCode();
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "(P) " + productInfos();
+	}
+	
 	
 }
